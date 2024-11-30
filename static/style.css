@@ -1,0 +1,57 @@
+body {
+    background: #131b21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  svg#flower-frame {
+    height: 90vh;
+    width: 100%;
+    position: relative;
+  }
+  
+  .flower-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff; /* Adjust for contrast */
+  }
+  
+  .flower-container h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .flower-container form {
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .flower-container a {
+    color: #00bcd4; /* Accent color for links */
+  }
+  
+  #Footer_group_1_,
+  [id^=PinkFlowerGroup],
+  [id^=BaseGroup] path,
+  [id^=LeafGroup] path,
+  path[id^=Stroke],
+  g[id^=BudGroup] g[id^=BudGroup] g[id^=Bud],
+  #Bud8_1_,
+  #Bud10_1_,
+  #Bud23_1_,
+  #Bud26_1_,
+  [id^=Dots],
+  [id^=Flourish] {
+    visibility: hidden;
+  }
+  

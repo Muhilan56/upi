@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page with Falling Leaves</title>
+    <style>
+      /* General body styles */
+      body {
+        height: 100vh;
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f2f2f2;
+        background-image: url("static/background.png");
+        background-size: cover;
+        overflow: hidden; /* Prevents the overflow of animated leaves */
+      }
+
+      /* Container for leaves */
+      .leaves-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none; /* Leaves won't interfere with form interactions */
+      }
+
+      /* Style for the individual leaves */
+      .leaf {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: #9ac23c00;
+        border-radius: 50%;
+        animation: falling 8s ease-in-out infinite;
+      }
+
+      /* Keyframe animation for the falling leaves */
+      @keyframes falling {
+        0% {
+          transform: translateY(-10%);
+        }
+        100% {
+          transform: translateY(3220%);
+        }
+      }
+
+      /* Position each leaf randomly within the container */
+      .leaf:nth-child(1) { left: 5%; top: -5%; animation-delay: 0.5s; }
+      .leaf:nth-child(2) { left: 25%; top: -10%; animation-delay: 2s; }
+      .leaf:nth-child(3) { left: 45%; top: -15%; animation-delay: 3.5s; }
+      .leaf:nth-child(4) { left: 65%; top: -20%; animation-delay: 1s; }
+      .leaf:nth-child(5) { left: 85%; top: -25%; animation-delay: 2.5s; }
+      .leaf:nth-child(6) { left: 95%; top: -15%; animation-delay: 2.5s; }
+      .leaf:nth-child(7) { left: 55%; top: -15%; animation-delay: 1.5s; }
+      .leaf:nth-child(8) { left: 20%; top: -15%; animation-delay: 1.0s; }
+      .leaf:nth-child(9) { left: 70%; top: -10%; animation-delay: 3s; }
+      .leaf:nth-child(10) { left: 40%; top: -20%; animation-delay: 0.8s; }
+      .leaf:nth-child(11) { left: 10%; top: -5%; animation-delay: 0.6s; }
+      .leaf:nth-child(12) { left: 60%; top: -10%; animation-delay: 2.3s; }
+      .leaf:nth-child(13) { left: 30%; top: -25%; animation-delay: 1.2s; }
+      .leaf:nth-child(14) { left: 50%; top: -15%; animation-delay: 1.8s; }
+      .leaf:nth-child(15) { left: 80%; top: -20%; animation-delay: 0.9s; }
+      .leaf:nth-child(16) { left: 90%; top: -25%; animation-delay: 2.7s; }
+      .leaf:nth-child(17) { left: 15%; top: -15%; animation-delay: 2.1s; }
+      .leaf:nth-child(18) { left: 75%; top: -5%; animation-delay: 1.4s; }
+      .leaf:nth-child(19) { left: 35%; top: -10%; animation-delay: 3.0s; }
+      .leaf:nth-child(20) { left: 25%; top: -20%; animation-delay: 0.3s; }
+
+      /* Container for the login form */
+      .flower-container {
+        position: relative;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+        z-index: 1; /* Makes sure the form is above the leaves */
+      }
+
+      /* Login form styling */
+      h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        text-align: left;
+        font-size: 14px;
+        color: #333;
+      }
+
+      input[type="text"], input[type="password"],input[type="email"] {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      button {
+        width: 100%;
+        padding: 12px;
+        background-color: #FFA15F;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+
+      p {
+        font-size: 14px;
+        color: #333;
+      }
+
+      a {
+        color: #FFA15F;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 600px) {
+        .flower-container {
+          padding: 20px;
+          width: 90%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Falling leaves container -->
+    <div class="leaves-container">
+      <!-- Add 20 leaves to the container -->
+      <div class="leaf"><img src="static/leave2.png" alt="Leaf"></div>
+      <div class="leaf"><img src="static/leave2.png" alt="Leaf"></div>
+      <div class="leaf"><img src="static/leave2.png" alt="Leaf"></div>
+      <div class="leaf"><img src="static/leave2.png" alt="Leaf"></div>
+      <div class="leaf"><img src="static/leave1.png" alt="Leaf"></div>
+      <div class="leaf"><img src="static/leave1.png" alt="Leaf"></div>
+      <div class="leaf"><img src="static/leave1.png" alt="Leaf"></div>
+      <div class="leaf"><img src="static/leave1.png" alt="Leaf"></div>
+      <div class="leaf"><img src="static/leave1.png" alt="Leaf"></div>
+      <div class="leaf"><img src="static/leave1.png" alt="Leaf"></div>
+      <div class="leaf"><img src="static/leave1.png" alt="Leaf"></div>
+      <div class="leaf"><img src="static/leave1.png" alt="Leaf"></div>
+      <div class="leaf"><img src="static/leave1.png" alt="Leaf"></div>
+      <div class="leaf"><img src="static/leave1.png" alt="Leaf"></div>
+      <div class="leaf"><img src="static/leave1.png" alt="Leaf"></div>
+      <div class="leaf"><img src="static/leave1.png" alt="Leaf"></div>
+      <div class="leaf"><img src="static/leave1.png" alt="Leaf"></div>
+      <div class="leaf"><img src="static/leave1.png" alt="Leaf"></div>
+      <div class="leaf"><img src="static/leave1.png" alt="Leaf"></div>
+      <div class="leaf"><img src="static/leave1.png" alt="Leaf"></div>
+    </div>
+
+    <!-- Login Form -->
+    <div class="flower-container">
+        <h2 class="mt-5">Register</h2>
+        <form action="{{ url_for('register') }}" method="POST" class="mt-4">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <!-- Display and allow editing the transaction limit -->
+        <div class="form-group">
+            <label for="transaction_limit">Transaction Limit</label>
+            <input type="number" class="form-control" id="transaction_limit" name="transaction_limit" value="10000" required>
+        </div>
+            <br>
+            <button type="submit" class="btn btn-success">Register</button>
+        </form>
+        <p class="mt-3">Already have an account? <a href="{{ url_for('login') }}">Login here</a></p>
+
+        <!-- Flash messages -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <div class="alert alert-{{ messages[0][0] }}">
+                    {{ messages[0][1] }}
+                </div>
+            {% endif %}
+        {% endwith %}
+    </div>
+</body>
+</html>
