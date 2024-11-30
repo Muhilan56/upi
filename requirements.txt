@@ -1,4 +1,5 @@
-Flask==2.2.2
-Flask-SQLAlchemy==3.0.3
-twilio==7.15.1
-requests==2.31.0
+flask
+pandas
+joblib
+scikit-learn
+gunicorn
